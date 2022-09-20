@@ -1,0 +1,275 @@
+/*general*/
+body {
+    font-family: 'K2D Semibold', sans-serif;
+    background-color: #f0f0f0;
+    background-image: url("img/vector2.jpg");
+    background-size: 60%;
+}
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 2rem;
+    background: rgb(120, 120, 223);
+}
+
+.cabecera-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.marca_cabecera{
+    display: flex;
+    align-items: center;
+}
+.h1_cabecera{
+    margin: 00.2rem;
+    color: white;
+}
+
+.menu-lista {
+    display: flex;
+    
+}
+
+.menu-lista-item {
+    list-style: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    
+}
+
+.menu-lista-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-lista-item a:hover {
+   color: black;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(120, 120, 223);
+    padding: 0.5rem;
+}
+.footer-marca{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.footer-contact{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+
+.contact-logo{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.h2_footer{
+    margin: 0.2rem;
+    color: white;
+}
+
+/*home*/
+.contenido-banner {
+    width: 100%;
+    height: 20rem;
+    background: url("img/playita.jpg") no-repeat center / cover;
+}
+.contenido-quienes-somos {
+    background: white;
+    padding: 1rem;
+    font-size: 1.25rem;
+
+}
+.contenido-quienes-somos-lista {
+    list-style: none;
+}
+
+.contenido-quienes-somos-lista li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenido-quienes-somos-lista li::before {
+    content: url("img/logobyn.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline-end: 0.4rem;
+}
+
+/*destinos*/
+.section {
+    display: flex;
+    justify-content: center;
+
+}
+.tabla {
+    width: 80%;
+    margin: 2rem;
+
+}
+td {
+    text-align: center;
+}
+
+.tabla-head {
+    height: 1.5rem;
+    text-transform: uppercase;
+    text-size-adjust: 150%;
+}
+.col-precio{
+    /* Para ue no quede tan chica la columna de los precios*/
+    width: 15%;
+
+}
+
+.bordes{
+    background-color: white;
+    border: rgb(120, 120, 223) 0.2rem;
+    border-style: ridge;
+    border-radius: 1rem;
+    border-spacing: 0.1rem;
+}
+
+.incluye {
+    list-style: none;
+}
+  
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-avion::before{
+    content: url("img/avion.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline-end: 0.4rem;
+    
+}
+.icon-hotel::before{
+    content: url("img/hotel.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline-end: 0.4rem;
+    
+}
+.icon-morfi::before{
+    content: url("img/morfi.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline-end: 0.4rem;
+    
+}
+.icon-asist::before{
+    content: url("img/asist.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline-end: 0.4rem;
+    
+}
+.icon-bus::before{
+    content: url("img/bus.svg");
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-inline-end: 0.4rem;
+    
+}
+
+p.margen{
+    margin: 00.3rem;
+}
+
+/*contacto*/
+
+.contenido-contactenos {
+    border: rgb(120, 120, 223) solid 0.2rem;
+    border-radius: 1rem;
+    background: white;
+    padding: 1rem;
+    font-size: 1.25rem;
+    
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    background: rgb(120, 120, 223);
+    padding: 2rem 0 3rem 3rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.formulario-campo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.formulario-campo label, .formulario-campo p {
+    margin-bottom: 0.5rem;
+}
+
+.formulario-campo input, .formulario-campo textarea {
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario button {
+    padding: 0.7rem;
+}
+
+.contenedor-captcha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.captcha {
+    margin-right: 1rem;
+    font-family: 'Nabla', cursive;
+    font-size: 30px;
+}
+
+.captcha-incorrecto {
+    display: none;
+}
+
+.captcha-incorrecto-mostrar {
+    color: red;
+    margin-left: 0.5rem;
+}
+
+.captcha-correcto {
+    display: none;
+}
+
+.captcha-correcto-mostrar {
+    color: greenyellow;
+    margin-left: 0.5rem;
+}
+
+.enviado {
+    display: none;
+}
+
+.enviado-ok {
+    display: inline;
+    text-align: center;
+    color: greenyellow;
+    margin-top: 1rem;
+}
+
+
