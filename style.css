@@ -245,8 +245,13 @@ p.margen{
     font-size: 30px;
 }
 
-.captcha-incorrecto {
+.captcha-vacio, .captcha-incorrecto, .captcha-correcto, .enviado  {
     display: none;
+}
+
+.captcha-vacio-mostrar {
+    color: red;
+    margin-left: 0.5rem;
 }
 
 .captcha-incorrecto-mostrar {
@@ -254,17 +259,9 @@ p.margen{
     margin-left: 0.5rem;
 }
 
-.captcha-correcto {
-    display: none;
-}
-
 .captcha-correcto-mostrar {
     color: greenyellow;
     margin-left: 0.5rem;
-}
-
-.enviado {
-    display: none;
 }
 
 .enviado-ok {

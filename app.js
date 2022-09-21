@@ -20,9 +20,9 @@ function validarCaptcha () {
     
     let captcha = document.getElementById('captcha').value;
     let captchaInput = document.getElementById('captcha-input').value;
+    let captchaVacio = document.getElementById('captcha-vacio');
     let captchaIncorrecto = document.getElementById('captcha-incorrecto');
     let captchaCorrecto = document.getElementById('captcha-correcto');
-    
     
     if (captcha === captchaInput) {
         captchaIncorrecto.classList.remove("captcha-incorrecto-mostrar");
@@ -31,13 +31,18 @@ function validarCaptcha () {
         captchaCorrecto.classList.remove("captcha-correcto");
         return true;
        
+    } else if (captchaInput === "") {
+        captchaVacio.classList.remove("captcha-vacio");
+        captchaVacio.classList.add("captcha-vacio-mostrar");
+        return false;
     } else {
+        captchaVacio.classList.remove("captcha-vacio-mostrar");
+        captchaVacio.classList.add("captcha-vacio");
         captchaIncorrecto.classList.remove("captcha-incorrecto");
         captchaIncorrecto.classList.add("captcha-incorrecto-mostrar");
         captchaCorrecto.classList.add("captcha-correcto");
         captchaCorrecto.classList.remove("captcha-correcto-mostrar");
         return false;
-        
     }
 }
 
