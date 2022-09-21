@@ -1,10 +1,12 @@
-/*general*/
+/*estilo general*/
+
 body {
     font-family: 'K2D Semibold', sans-serif;
     background-color: #f0f0f0;
     background-image: url("img/vector2.jpg");
     background-size: 60%;
 }
+
 .cabecera {
     display: flex;
     justify-content: space-between;
@@ -17,25 +19,24 @@ body {
     height: 3rem;
 }
 
-.marca_cabecera{
+.cabecera-marca{
     display: flex;
     align-items: center;
 }
-.h1_cabecera{
+
+.cabecera-h1{
     margin: 00.2rem;
     color: white;
 }
 
 .menu-lista {
     display: flex;
-    
 }
 
 .menu-lista-item {
     list-style: none;
     margin-right: 1rem;
     text-transform: uppercase;
-    
 }
 
 .menu-lista-item a {
@@ -53,42 +54,45 @@ body {
     background: rgb(120, 120, 223);
     padding: 0.5rem;
 }
+
 .footer-marca{
     display: flex;
     align-items: center;
     color: white;
 }
+
 .footer-contact{
     display: flex;
     justify-content: flex-end;
     color: white;
 }
 
-
 .contact-logo{
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.h2_footer{
-    margin: 0.2rem;
-    color: white;
+.footer-h2{
+    margin-left: 0.2rem;
 }
 
 /*home*/
 .contenido-banner {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     background: url("img/playita.jpg") no-repeat center / cover;
 }
+
 .contenido-quienes-somos {
-    background: white;
+    background: #f0f0f0;;
     padding: 1rem;
     font-size: 1.25rem;
-
 }
+
 .contenido-quienes-somos-lista {
     list-style: none;
+    padding-inline-start: 2rem;
+    font-size: 1rem;
 }
 
 .contenido-quienes-somos-lista li{
@@ -99,22 +103,23 @@ body {
 
 .contenido-quienes-somos-lista li::before {
     content: url("img/logobyn.svg");
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
     margin-inline-end: 0.4rem;
 }
 
 /*destinos*/
-.section {
+.destinos {
     display: flex;
     justify-content: center;
-
 }
+
 .tabla {
     width: 80%;
     margin: 2rem;
-
 }
+
 td {
     text-align: center;
 }
@@ -124,10 +129,9 @@ td {
     text-transform: uppercase;
     text-size-adjust: 150%;
 }
-.col-precio{
-    /* Para ue no quede tan chica la columna de los precios*/
-    width: 15%;
 
+.col-precio{
+    width: 15%;
 }
 
 .bordes{
@@ -147,55 +151,53 @@ td {
     justify-content: center;
     align-items: center;
 }
+
 .icon-avion::before{
     content: url("img/avion.svg");
     width: 1.5rem;
     height: 1.5rem;
     margin-inline-end: 0.4rem;
-    
 }
+
 .icon-hotel::before{
     content: url("img/hotel.svg");
     width: 1.5rem;
     height: 1.5rem;
     margin-inline-end: 0.4rem;
-    
 }
+
 .icon-morfi::before{
     content: url("img/morfi.svg");
     width: 1.5rem;
     height: 1.5rem;
     margin-inline-end: 0.4rem;
-    
 }
+
 .icon-asist::before{
     content: url("img/asist.svg");
     width: 1.5rem;
     height: 1.5rem;
     margin-inline-end: 0.4rem;
-    
 }
+
 .icon-bus::before{
     content: url("img/bus.svg");
     width: 1.7rem;
     height: 1.7rem;
     margin-inline-end: 0.4rem;
-    
 }
 
 p.margen{
-    margin: 00.3rem;
+    margin: 0.3rem;
 }
 
 /*contacto*/
-
-.contenido-contactenos {
+.contactenos {
     border: rgb(120, 120, 223) solid 0.2rem;
     border-radius: 1rem;
     background: white;
     padding: 1rem;
     font-size: 1.25rem;
-    
 }
 
 .formulario {
@@ -223,7 +225,7 @@ p.margen{
     padding: 0.5rem 0 0.5rem 1rem;
 }
 
-.formulario textarea {
+.formulario-campo textarea {
     resize: none;
 }
 
